@@ -1,9 +1,9 @@
 - name: variables
   hosts: web
   vars:
-    COURSE: devops with aws
-    Duration: 120 hrs
-    trainer: shiva kumar
+    COURSE: "devops with aws"
+    Duration: "120 hrs"
+    trainer: "shiva kumar"
   tasks:
   - name: variables
     ansible.builtin.debug:
