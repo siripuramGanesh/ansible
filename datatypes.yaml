@@ -1,0 +1,20 @@
+- name: datatypes in ansible
+  hosts: local
+  vars:
+    COURSE: DEVOPS WITH AWS
+    DURATION: 120HRS
+    TOPICS:
+    - AWS
+    - SHELL
+    - ANSIBLE
+    - K8
+    - TERRAFORM
+    TOOLS:
+      CM: ANSIBLE
+      CI: TERRAFORM
+      SCRIPTING: SHELL
+    
+  tasks:
+    name: ansible datatypes
+    ansible.builtin.debug:
+      msg: Ganesh is learing {{COURSE}} DURATION IS {{DURATION}} TOPICS ARE {{TOPICS}} AND TOOLS ARE {{TOOLS}}
