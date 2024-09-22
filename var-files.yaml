@@ -5,4 +5,4 @@
   tasks:
   - name: vars from other file
     ansible.builtin.debug:
-     msg: I am ganesh learing {{COURSE}} duration {{DURATION}} trainer {{TRAINER}}
+     msg: "I am ganesh learing {{COURSE}} duration {{DURATION}} trainer {{TRAINER}}"
