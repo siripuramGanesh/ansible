@@ -1,0 +1,6 @@
+- name: variables
+  hosts: web
+  tasks:
+  - name: variables
+    system.builtin.debug:
+    msg: "I am Ganesh devotee of Lord Venkateshwara "
