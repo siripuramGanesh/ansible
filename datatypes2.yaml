@@ -14,5 +14,5 @@
       VISHNUNIVAAM: GOVINDARAJA
   tasks: 
   - name: task1 play 1 datatypes
-    ansible.built.debug:
+    ansible.builtin.debug:
       msg: "LORD {{NAME}} IS LOCATED IN {{PLACE}} AT A DISTANCE OF {{DISTANCE}} AND OTHERS GODS TO VISIT {{GODS}} AT {{LOCATION}}"
