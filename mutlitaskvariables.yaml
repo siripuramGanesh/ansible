@@ -1,6 +1,10 @@
 - name: multi task variable
   hosts: web
+  vars:
+   COURSE: devops with aws
+   duration: 120hrs
+   trainer: shivakumar
   tasks:
   - name: task 1 variable e
     ansible.builtin.debug:
-     msg: "I am learing devops with aws ,duration is 120hrs,trainer is shivakumar"
+     msg: "I am learing {{COURSE}} ,duration is {{duration}},trainer is {{trainer}}"
