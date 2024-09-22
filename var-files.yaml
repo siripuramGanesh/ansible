@@ -1,0 +1,7 @@
+- name: vars from other file
+  hosts: web
+  var_file:
+    var.yaml
+  tasks:
+    ansible.builtin.debug:
+     msg: I am ganesh learing {{COURSE}} duration {{DURATION}} trainer {{TRAINER}}
