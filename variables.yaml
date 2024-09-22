@@ -2,5 +2,5 @@
   hosts: web
   tasks:
   - name: variables
-    system.builtin.debug:
+    ansible.builtin.debug:
     msg: "I am Ganesh devotee of Lord Venkateshwara "
