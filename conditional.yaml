@@ -2,13 +2,12 @@
   hosts: local
   connnection: local
   vars: 
-    mynumber=77
+    mynumber: 77
   tasks:
   - name: task1 conditional statements
     ansible.builtin.debug:
       msg: "{{mynumber}} is greater than 10"
     when: mynumber > 10
-
   tasks:
   - name: task2 conditional statements
     ansible.builtin.debug:
