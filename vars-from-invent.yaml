@@ -1,0 +1,6 @@
+- name: getting vars from inventory
+  hosts: web
+  tasks: 
+  - name: getting vars from invent
+    ansible.builtin.debug:
+      msg: "GANESH IS LAEARING {{COURSE}} DURATION {{DURATION}} TRAINER {{TRAINER}}"
