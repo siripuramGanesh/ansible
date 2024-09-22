@@ -1,0 +1,6 @@
+- name: installing nginx heterogenous
+  hosts: web
+  tasks:
+  - name: gathering facts
+    ansible.builtin.debug:
+      msg: "{{ansible_facts}}"
