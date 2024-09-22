@@ -5,6 +5,8 @@
     Duration: "120 hrs"
     trainer: "shiva kumar"
   tasks:
-  - name: variables
+  - name: variables 
     ansible.builtin.debug:
       msg: "hi, i am learning {{COURSE}},duration is {{Duration}} ,trainer:{{trainer}}"
+
+  
