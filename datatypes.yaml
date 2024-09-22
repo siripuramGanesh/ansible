@@ -13,8 +13,7 @@
     TOOLS:
       CM: ANSIBLE
       CI: TERRAFORM
-      SCRIPTING: SHELL
-    
+      SCRIPTING: SHELL  
   tasks:
     name: ansible datatypes
     ansible.builtin.debug:
