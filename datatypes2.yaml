@@ -1,0 +1,18 @@
+- name: datatypes 
+  hosts: web
+  vars:
+    NAME: VENKATESHWARA
+    PLACE: THIRUPATHI
+    DISTANCE: 777
+    GODS: 
+    - TIRUMALA
+    - VARAHASWAMY
+    - SRIDEVI
+    - BHUDEVI 
+    LOCATION:
+      ISKON: SRIKRISHNA
+      VISHNUNIVAAM: GOVINDARAJA
+  tasks: 
+  - name: task1 play 1 datatypes
+    ansible.biult.debug:
+      msg: LORD {{NAME}} IS LOCATED IN {{PLACE}} AT A DISTANCE OF {{DISTANCE}} AND OTHERS GODS TO VISIT {{GODS}} AT {{LOCATION}}
