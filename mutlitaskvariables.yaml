@@ -10,5 +10,7 @@
      msg: "I am learing {{COURSE}} ,duration is {{duration}},trainer is {{trainer}}"
 
   - name: task 2 variable
+    vars: 
+     COURSE: ansible
     ansible.builtin.debug:
      msg: "Ganesh is learning {{COURSE}} ,duration is {{duration}} ,trainer is {{trainer}}"
