@@ -1,0 +1,13 @@
+- name: entering the vars through prompt
+  hosts: web
+  vars_prompt:
+  - name: COURSE
+    prompt: please enter the course
+    name: DURATION
+    prompt: please enter the duration
+    name: TRAINER
+    prompt: please enter the trainer
+  tasks:
+  - name: vars-prompt
+    ansible.builtin.debug:
+      msg: "Ganesh is learning {{COURSE}} DURATION IS {{DURATION}} TRAINER IS {{TRAINER}}"
