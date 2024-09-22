@@ -1,4 +1,4 @@
-- name: datatypes in ansible
+- name: datatypes 
   hosts: local
   vars:
     COURSE: DEVOPS WITH AWS
@@ -17,4 +17,4 @@
   tasks:
     name: ansible datatypes
     ansible.builtin.debug:
-      msg: Ganesh is learing {{COURSE}} DURATION IS {{DURATION}} TOPICS ARE {{TOPICS}} AND TOOLS ARE {{TOOLS}}
+      msg: "Ganesh is learing {{COURSE}} DURATION IS {{DURATION}} TOPICS ARE {{TOPICS}} AND TOOLS ARE {{TOOLS}}""
