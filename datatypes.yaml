@@ -1,5 +1,5 @@
 - name: datatypes 
-  #hosts: local
+  hosts: local
   connection: local
   vars:
     COURSE: DEVOPS WITH AWS
