@@ -3,4 +3,4 @@
   tasks:
   - name: variables
     ansible.builtin.debug:
-    msg: "I am Ganesh devotee of Lord Venkateshwara "
+      msg: "I am Ganesh devotee of Lord Venkateshwara "
