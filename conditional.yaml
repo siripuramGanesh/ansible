@@ -1,8 +1,12 @@
 - name: conditional in ansible
   hosts: local
   connection: local
-  vars: 
-    mynumber: 77
+  vars_prompt:
+    name: mynumber
+    prompt: please enter the number
+    private: false
+  # vars: 
+  #   mynumber: 77
   tasks:
   - name: task1 conditional statements
     ansible.builtin.debug:
