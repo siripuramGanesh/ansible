@@ -4,3 +4,10 @@
   - name: play 1-task 1
     ansible.builtin.debug:
       msg: "VENKATESHWARA 777"
+
+- name: play 2
+  hosts: web
+  tasks:
+  - name: play 2-task 1
+    ansible.builtin.debug:
+      msg: "BALAJI 7777777"
