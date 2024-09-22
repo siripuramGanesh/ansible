@@ -3,4 +3,4 @@
   tasks:
   - name: getting vars from cmdline
     ansible.builtin.debug:
-      msg: I am {{NAME}} FROM {{CITY}}
+      msg: "I am {{NAME}} FROM {{CITY}}"
