@@ -15,9 +15,9 @@
       CI: TERRAFORM
       SCRIPTING: SHELL  
       CLOUD: AWS
-        AWS:
-        - S3
-        - EC2
+      AWS:
+      - S3
+      - EC2
   tasks:
   - name: ansible datatypes
     ansible.builtin.debug:
