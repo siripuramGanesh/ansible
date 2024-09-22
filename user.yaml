@@ -1,5 +1,6 @@
 - name: create user
   hosts: web
+  become: yes
   tasks:
   - name: check if the user is present or not
     ansible.builtin.command: id expense
@@ -12,4 +13,4 @@
 
   - name: create user
     ansible.builtin.command: useradd expense
-    when: user.rc != 0
+    when: user.rc != 0 
