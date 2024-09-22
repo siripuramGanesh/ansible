@@ -1,6 +1,10 @@
 - name: variables
   hosts: web
+  vars:
+    COURSE: devops with aws
+    Duration: 120 hrs
+    trainer: shiva kumar
   tasks:
   - name: variables
     ansible.builtin.debug:
-      msg: "I am Ganesh devotee of Lord Venkateshwara "
+      msg: "hi, i am learning devops with aws,duration is 120 hrs ,trainer:shivakumar"
