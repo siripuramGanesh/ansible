@@ -1,6 +1,6 @@
 - name: conditional in ansible
   hosts: local
-  connnection: local
+  connection: local
   vars: 
     mynumber: 77
   tasks:
