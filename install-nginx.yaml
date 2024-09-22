@@ -1,6 +1,21 @@
 - name: installing nginx heterogenous
   hosts: web
+  become: yes
   tasks:
   - name: gathering facts
     ansible.builtin.debug:
       msg: "{{ansible_facts}}"
+
+  - name: installing nginx on redhat
+    ansible.builtin.dnf:
+      name: nginx
+      state: installed
+    when: ansible_os_family = "RedHat"
+  
+
+  - name: installing nginx on Debian
+    ansible.builtin.apt:
+      name: nginx
+      state: installed
+    when: ansible_os_family = "Debian"
+      
