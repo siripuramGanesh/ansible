@@ -1,0 +1,6 @@
+- name: create user
+  hosts: web
+  tasks:
+  - name: check if the user is present or not
+    ansible.builtin.command: id expense
+    register: user
