@@ -1,5 +1,6 @@
 - name: installing and uninstalling packages
   hosts: web
+  become: yes
   tasks:
   - name: installing and uninstalling packages
     ansible.builtin.package:
