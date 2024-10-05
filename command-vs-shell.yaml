@@ -6,4 +6,4 @@
     ansible.builtin.shell: ls -ltr > /tmp/output.txt
 
   - name: command
-    ansible.builtin.command: dnf install nginx
+    ansible.builtin.command: ls -l
