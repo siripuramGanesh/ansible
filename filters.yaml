@@ -29,3 +29,12 @@
       numbers: [4,5,1,9,6]
     ansible.builtin.debug:
       msg: "MIN: {{ numbers | min }}  MAX: {{ numbers | max}}"
+
+  - name: task6 filters
+    vars:
+      course:
+        name: "AWS"
+        duration: 120hrs
+        trainer: "Navin"
+    ansible.builtin.debug:
+      msg: "{{ course | dict2items }}"
