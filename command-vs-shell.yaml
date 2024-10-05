@@ -4,6 +4,8 @@
   tasks:
   - name: shell
     ansible.builtin.shell: ls -ltr > /tmp/output.txt
+    # shell can execute complex commands like piping or redirectors ,shell logins into the server and executes
 
   - name: command
     ansible.builtin.command: ls -l
+    # command can execute simple commands and it does not login into the server 
