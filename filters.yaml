@@ -42,7 +42,7 @@
   - name: task 7 filters
     vars:
       course:
-      - { "key": "name" ,"value": "AWS" },
+      - { "key": "name" ,"value": "AWS" }
       - { "key": "duration", "value": "120hrs"}
     ansible.builtin.debug:
       msg: "{{ course | items2dict }}"
