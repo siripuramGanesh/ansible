@@ -13,10 +13,10 @@
   - name: creating instances ec-2
     amazon.aws.ec2_instance:
       name: "{{ item }}"
-      vpn_subnet_id: subnetid
+      vpn_subnet_id: "{{subnetid}}"
       instance_type: t3.micro
-      security_group: sg
-      image_id: ami
+      security_group: "{{sg}}"
+      image_id: "{{ami}}"
       register: ec2-instance
     loop: "{{ instances }}"
 
