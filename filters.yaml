@@ -11,3 +11,9 @@
       greeting: "Hello World"
     ansible.builtin.debug:
       msg: "{{ greeting | lower }}"
+
+  - name: task3 filters
+    vars:
+      greeting: "balaji 777"
+    ansible.builtin.debug:
+      msg: "{{ geeting | upper}}"
