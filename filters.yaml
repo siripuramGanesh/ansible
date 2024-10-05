@@ -8,5 +8,7 @@
 
   tasks:
   - name: task2 filters
+    vars: 
+      greeting: "Hello World"
     ansible.builtin.debug:
-      msg: "{{ Hello World | lower }}"
+      msg: "{{ greeting | lower }}"
