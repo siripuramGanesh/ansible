@@ -23,3 +23,9 @@
       numbers: [1,2,3,5,3,2,1]
     ansible.builtin.debug:
       msg: "{{ numbers | unique }}"
+
+  - name: task5 filters
+    vars:
+      numbers: [4,5,1,9,6]
+    ansible.builtin.debug:
+      msg: "{{ numbers | min }}"
