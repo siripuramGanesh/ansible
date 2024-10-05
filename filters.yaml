@@ -17,3 +17,9 @@
       greeting: "balaji 777"
     ansible.builtin.debug:
       msg: "{{ greeting | upper}}"
+
+  - name: task4 filters
+    vars:
+      numbers: [1,2,3,5,3,2,1]
+    ansible.builtin.debug:
+      msg: "{{ numbers | unique }}"
