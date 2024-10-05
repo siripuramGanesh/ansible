@@ -5,3 +5,8 @@
   - name: task1 filters
     ansible.builtin.debug:
       msg: "Hello {{ course | default('ansible') }}"
+
+  tasks:
+  - name: task2 filters
+    ansible.builtin.debug:
+      msg: "{{ Hello World | lower }}"
