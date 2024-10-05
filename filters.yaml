@@ -6,7 +6,6 @@
     ansible.builtin.debug:
       msg: "Hello {{ course | default('ansible') }}"
 
-  tasks:
   - name: task2 filters
     vars: 
       greeting: "Hello World"
