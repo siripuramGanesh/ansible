@@ -12,7 +12,7 @@
   tasks: 
   - name: creating instances ec-2
     amazon.aws.ec2_instance:
-      name: "{{ items }}"
+      name: "{{ item }}"
       vpn_subnet_id: subnetid
       instance_type: t3.micro
       security_group: sg
