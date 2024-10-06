@@ -36,4 +36,5 @@
       ttl: 1
       value: "{{ item.instances[0].private_ip_address }}"
       wait: true
+      overwrite: yes
     loop: "{{ ec2_instances.results }}"
