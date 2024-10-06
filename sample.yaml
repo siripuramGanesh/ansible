@@ -8,5 +8,5 @@
   tasks:
     name: task1 
     ansible.builtin.debug:
-      msg: "tools are {{ item }}"
+      msg: "tools are {{ items }}"
     loops: "{{tools}}"
