@@ -6,6 +6,7 @@
       ci: terraform
       cloud: aws
   tasks:
-  - ansible.builtin.debug:
+    name: task1 
+    ansible.builtin.debug:
       msg: "tools are {{ item }}"
     loops: "{{tools}}"
