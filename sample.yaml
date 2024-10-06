@@ -1,5 +1,5 @@
-- hosts: local
-  name: sample key word
+- name: sample yaml
+  hosts: local
   vars:
     tools:
       cm: ansible
