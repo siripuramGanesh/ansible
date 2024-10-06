@@ -1,0 +1,11 @@
+- hosts: local
+  name: sample key word
+  vars:
+    tools:
+      cm: ansible
+      ci: terraform
+      cloud: aws
+  tasks:
+  - ansible.builtin.debug:
+      msg: "tools are {{ item }}"
+    loops: "{{tools}}"
